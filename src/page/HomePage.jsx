@@ -1,5 +1,6 @@
 import Footer from "../component/Footer";
 import Header from "../component/Header";
+import PersoCard from "../component/PersoCard";
 import { persoOfHp } from "../utils/persoUtils";
 
 function HomePage() {
@@ -24,22 +25,21 @@ function HomePage() {
         <Header />
         <main>
             <section>
-                <h2>Personnages du plus vieux au plus jeune : </h2>
+                <div>
+                    <h2>Personnages du plus vieux au plus jeune : </h2>
+                </div>
+
+                
                 {persoOfHpSortByDateofBirth.map((perso) => {
                     return(
-                        <article>
-                            <p>{perso.name}</p>
-                            <img src={perso.img} alt="" />
-                        </article>
+                      <PersoCard perso={perso} />
                     )
                 })}
 
                 <h2>Trois personnages sélectionnés :</h2>
                 {threePersoOfHpSelected.map((perso) => {
                     return(
-                        <article>
-                            <p>{perso.name}</p>
-                        </article>
+                       <PersoCard perso={perso} />
                     )
                 } )}
 
