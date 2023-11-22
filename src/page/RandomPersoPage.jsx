@@ -11,7 +11,7 @@ function RandomPersoPage() {
 
     return(
         <>
-        <Header />
+        <Header currentPage="persorandom" />
         <main>
             <article>
                 <p>{randomPerso.name}</p>

@@ -9,7 +9,7 @@ function PersonnagesPage() {
 
     return(
         <>
-        <Header />
+        <Header currentPage="perso" />
         <main>
            {persoOfHp.map((perso) => {
             return(

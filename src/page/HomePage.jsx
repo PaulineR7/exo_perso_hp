@@ -22,7 +22,7 @@ function HomePage() {
 
     return(
         <>
-        <Header />
+        <Header currentPage="home" />
         <main>
             <section>
                 <div>
