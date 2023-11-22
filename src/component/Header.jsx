@@ -35,6 +35,9 @@ function Header({currentPage}) {
                         <Link to="/persorandom">Personnage aléatoire</Link> 
                     )}
                     </li>
+                    <li>
+                        <Link to ="/animals">Animals</Link>
+                    </li>
                 </ul>
             </nav>
         </header>

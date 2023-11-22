@@ -4,6 +4,7 @@ import HomePage from './page/HomePage';
 import PersonnagesPage from "./page/PersonnagesPage";
 import PersonnageDetailPage from "./page/PersonnageDetailPage";
 import RandomPersoPage from "./page/RandomPersoPage";
+import AnimalsPage from "./component/AnimalsCard";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/perso" element={<PersonnagesPage />} />
         <Route path="/detail/:persoId/perso" element={<PersonnageDetailPage />} />
         <Route path="/persorandom" element={<RandomPersoPage />} />
+        <Route path="/animals" element={<AnimalsPage />} />
       </Routes>
     </BrowserRouter>
   </div>
