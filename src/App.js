@@ -6,6 +6,7 @@ import PersonnageDetailPage from "./page/PersonnageDetailPage";
 import RandomPersoPage from "./page/RandomPersoPage";
 import AnimalsPage from "./component/AnimalsCard";
 import CopyrightPage from "./page/CopyrightPage";
+import FormMessage from "./page/FormMessage";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/persorandom" element={<RandomPersoPage />} />
         <Route path="/animals" element={<AnimalsPage />} />
         <Route path="/copyright" element={<CopyrightPage /> } />
+        <Route path="/form" element={<FormMessage />} />
       </Routes>
     </BrowserRouter>
   </div>
