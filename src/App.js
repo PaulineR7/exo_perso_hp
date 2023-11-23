@@ -8,6 +8,7 @@ import AnimalsPage from "./component/AnimalsCard";
 import CopyrightPage from "./page/CopyrightPage";
 import FormMessage from "./page/FormMessage";
 import LikesPage from "./page/LikesPage";
+import CocktailsPage from "./page/CocktailsPage";
 
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
         <Route path="/copyright" element={<CopyrightPage /> } />
         <Route path="/form" element={<FormMessage />} />
         <Route path="/likes" element={<LikesPage />} />
+        <Route path="/cocktails" element={<CocktailsPage />} />
+
       </Routes>
     </BrowserRouter>
   </div>
